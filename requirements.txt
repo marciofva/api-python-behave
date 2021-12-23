@@ -1,0 +1,5 @@
+behave==1.2.6
+PyHamcrest==2.0.2
+PyYAML==5.4.1
+requests==2.26.0
+behave2cucumber~=1.0.3

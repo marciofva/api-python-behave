@@ -1,0 +1,4 @@
+ROOT_PATH:
+    HOST: http://fakerestapi.azurewebsites.net/api
+    AUTH: http://fakerestapi.azurewebsites.net/apiacbd/token
+

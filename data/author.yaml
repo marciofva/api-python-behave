@@ -1,0 +1,33 @@
+template_author: &default_author
+  id: 91
+  idBook: 2
+  firstName: 'First Name 91'
+  lastName: 'Last Name 91'
+
+
+valid:
+  <<: *default_author
+
+
+invalid_idBook:
+  <<: *default_author
+  idBook: '6k'
+
+
+author_with_book: &default_with_author
+  id: 91
+  idBook: 2
+  firstName: 'First Name 91'
+  lastName: 'Last Name 91'
+  book: &default_book
+    id: 7
+    name: 'book abc'
+
+
+valid_author_with_book:
+  <<: *default_with_author
+  book:
+    <<: *default_book
+    id: 9
+    name: 'book abc'
+    desc: 'desc book'
